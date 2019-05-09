@@ -1,10 +1,12 @@
-require_relative 'boot'
+# frozen_string_literal: true
 
-require 'action_controller/railtie'
-require 'action_mailer/railtie'
-require 'active_model/railtie'
-require 'sprockets/railtie'
-require 'rails/test_unit/railtie'
+require_relative "boot"
+
+require "action_controller/railtie"
+require "action_mailer/railtie"
+require "active_model/railtie"
+require "sprockets/railtie"
+require "rails/test_unit/railtie"
 
 Bundler.require(*Rails.groups)
 require "cache_with_settings"
@@ -17,4 +19,3 @@ module Dummy
     config.i18n.default_locale = :uk
   end
 end
-

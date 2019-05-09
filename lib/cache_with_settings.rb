@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "cache_with_settings/configuration"
 require "cache_with_settings/railtie"
 require "money-rails"
@@ -11,8 +13,8 @@ module CacheWithSettings
     end
 
     private
-    def cache_with_settings_compose_key(key)
-      Array.wrap(key).concat(CacheWithSettings.cache_keys)
-    end
+      def cache_with_settings_compose_key(key)
+        Array.wrap(key).concat(CacheWithSettings.cache_keys)
+      end
   end
 end

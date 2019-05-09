@@ -1,4 +1,6 @@
-require 'test_helper'
+# frozen_string_literal: true
+
+require "test_helper"
 
 class CacheWithSettings::Test < ActiveSupport::TestCase
   include CacheWithSettings::Helpers
@@ -8,6 +10,6 @@ class CacheWithSettings::Test < ActiveSupport::TestCase
   end
 
   test "helper" do
-    assert_equal ['x', 'uk', 'USD'], send(:cache_with_settings_compose_key, 'x')
+    assert_equal ["x", "uk", "USD"], send(:cache_with_settings_compose_key, "x")
   end
 end
