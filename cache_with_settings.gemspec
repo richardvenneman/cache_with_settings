@@ -7,9 +7,9 @@ require "cache_with_settings/version"
 Gem::Specification.new do |s|
   s.name        = "cache_with_settings"
   s.version     = CacheWithSettings::VERSION
-  s.authors     = ["Igor Kasyanchuk"]
-  s.email       = ["igorkasyanchuk@gmail.com"]
-  s.homepage    = "https://github.com/igorkasyanchuk"
+  s.authors     = ["Richard Venneman"]
+  s.email       = ["richardvenneman@me.com"]
+  s.homepage    = "https://github.com/richardvenneman"
   s.summary     = "Automatic fragment caching in Rails with locales"
   s.description = "Automatically add application locale (I18n.locale) as a part of cache key in Rails views."
   s.license     = "MIT"
