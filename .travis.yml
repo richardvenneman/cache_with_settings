@@ -9,9 +9,12 @@ cache: bundler
 
 bundler_args: --without development --jobs=3 --retry=3 --path=../vendor/bundle
 
+before_install:
+  - gem install bundler 'rubocop:0.67.2' --no-document
+  - bundle install
 script:
   - bundle exec rake test
-  - bundle exec rake rubocop
+  - rubocop
 
 notifications:
   email: false
