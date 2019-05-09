@@ -12,14 +12,13 @@ Gem::Specification.new do |s|
   s.authors     = ["Richard Venneman"]
   s.email       = ["richardvenneman@me.com"]
   s.homepage    = "https://github.com/richardvenneman"
-  s.summary     = "Automatic fragment caching in Rails with locales"
-  s.description = "Automatically add application locale (I18n.locale) as a part of cache key in Rails views."
+  s.summary     = "Configurable Rails fragment caching"
+  s.description = "Configure any values such as the application locale to be part of Rails fragment caching cache keys."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
   s.add_dependency "rails"
-  s.add_dependency "money-rails"
 
   s.add_development_dependency "rubocop", "< 0.68"
   s.add_development_dependency "rubocop-rails_config"

@@ -2,7 +2,6 @@
 
 require "cache_with_settings/configuration"
 require "cache_with_settings/railtie"
-require "money-rails"
 
 module CacheWithSettings
   module Helpers
