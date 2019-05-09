@@ -1,5 +1,5 @@
 # CacheWithSettings
-CacheWithSettings allows you to add any keys to partial caching cache keys. This is useful if your website is multilingual or allows the user to choose a display currency.
+CacheWithSettings allows you to add any key to partial caching cache keys. This is useful if your website is multilingual or allows the user to choose a display currency.
 
 [![Build Status](https://travis-ci.org/richardvenneman/cache_with_settings.svg?branch=master)](https://travis-ci.org/richardvenneman/cache_with_settings)
 [![Gem Version](https://badge.fury.io/rb/cache_with_settings.svg)](https://badge.fury.io/rb/cache_with_settings)
@@ -26,7 +26,8 @@ After adding the gem to your Gemfile, configure CacheWithSettings in an initiali
 
 ```ruby
 CacheWithSettings.configure do |config|
-  config.cache_keys = [I18n.locale.to_s, MoneyRails.default_currency.to_s]
+  # Specify a proc that returns an array of strings
+  config.cache_keys = -> { [I18n.locale.to_s, MoneyRails.default_currency.to_s] }
 end
 ```
 

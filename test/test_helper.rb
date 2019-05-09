@@ -11,5 +11,5 @@ puts "USING Rails: #{Gem.loaded_specs['rails'].version}"
 Minitest.backtrace_filter = Minitest::BacktraceFilter.new
 
 CacheWithSettings.configure do |config|
-  config.cache_keys = [I18n.locale.to_s, "EUR"]
+  config.cache_keys = -> { [I18n.locale.to_s, "EUR"] }
 end

@@ -13,7 +13,7 @@ module CacheWithSettings
 
     private
       def cache_with_settings_compose_key(key)
-        Array.wrap(key).concat(CacheWithSettings.cache_keys)
+        Array.wrap(key).concat(CacheWithSettings.cache_keys.call)
       end
   end
 end
