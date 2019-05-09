@@ -1,3 +1,4 @@
+require "cache_with_settings/configuration"
 require "cache_with_settings/railtie"
 require "money-rails"
 
@@ -11,7 +12,7 @@ module CacheWithSettings
 
     private
     def cache_with_settings_compose_key(key)
-      Array.wrap(key).concat([I18n.locale.to_s, MoneyRails.default_currency.to_s])
+      Array.wrap(key).concat(CacheWithSettings.cache_keys)
     end
   end
 end
