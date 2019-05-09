@@ -1,7 +1,8 @@
-[![Build Status](https://travis-ci.org/richardvenneman/cache_with_settings.svg?branch=master)](https://travis-ci.org/richardvenneman/cache_with_settings)
-
-# Rails cache_with_settings
+# CacheWithSettings
 CacheWithSettings allows you to add any keys to partial caching cache keys. This is useful if your website is multilingual or allows the user to choose a display currency.
+
+[![Build Status](https://travis-ci.org/richardvenneman/cache_with_settings.svg?branch=master)](https://travis-ci.org/richardvenneman/cache_with_settings)
+[![Gem Version](https://badge.fury.io/rb/cache_with_settings.svg)](https://badge.fury.io/rb/cache_with_settings)
 
 ## Problem & Solution
 If you find yourself adding dynamic values, such as locales and currencies to your cache keys, this gem could be useful for you. Instead of:
