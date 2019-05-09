@@ -7,7 +7,7 @@ require 'sprockets/railtie'
 require 'rails/test_unit/railtie'
 
 Bundler.require(*Rails.groups)
-require "cache_with_locale"
+require "cache_with_settings"
 
 module Dummy
   class Application < Rails::Application

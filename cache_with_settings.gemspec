@@ -1,12 +1,12 @@
 $:.push File.expand_path("lib", __dir__)
 
 # Maintain your gem's version:
-require "cache_with_locale/version"
+require "cache_with_settings/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "cache_with_locale"
-  s.version     = CacheWithLocale::VERSION
+  s.name        = "cache_with_settings"
+  s.version     = CacheWithSettings::VERSION
   s.authors     = ["Igor Kasyanchuk"]
   s.email       = ["igorkasyanchuk@gmail.com"]
   s.homepage    = "https://github.com/igorkasyanchuk"

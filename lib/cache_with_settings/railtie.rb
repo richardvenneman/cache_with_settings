@@ -1,8 +1,8 @@
-module CacheWithLocale
+module CacheWithSettings
   class Railtie < ::Rails::Railtie
     initializer 'rails_db.helpers' do
       ActiveSupport.on_load :action_view do
-        ActionView::Base.send :include, CacheWithLocale::Helpers
+        ActionView::Base.send :include, CacheWithSettings::Helpers
       end
     end
   end

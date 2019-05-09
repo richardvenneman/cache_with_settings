@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/igorkasyanchuk/cache_with_locale.svg?branch=master)](https://travis-ci.org/igorkasyanchuk/cache_with_locale)
+[![Build Status](https://travis-ci.org/richardvenneman/cache_with_settings.svg?branch=master)](https://travis-ci.org/richardvenneman/cache_with_settings)
 
 # Rails cache with locale
 Automatically adding current application locale (I18n.locale) as a part of caching key in Rails views.
@@ -33,7 +33,7 @@ Just add this gem to your Gemfile.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'cache_with_locale'
+gem 'cache_with_settings'
 ```
 
 And then execute:
