@@ -8,6 +8,6 @@ class CacheWithSettings::Test < ActiveSupport::TestCase
   end
 
   test "helper" do
-    assert_equal send(:cache_with_settings_compose_key, 'x'), ['x', 'uk']
+    assert_equal send(:cache_with_settings_compose_key, 'x'), ['x', 'uk', 'USD']
   end
 end
