@@ -2,9 +2,10 @@
 
 module CacheWithSettings
   class Railtie < ::Rails::Railtie
-    initializer "rails_db.helpers" do
+    initializer "cache_with_settings.helpers" do
       ActiveSupport.on_load :action_view do
-        ActionView::Base.send :include, CacheWithSettings::Helpers
+        ActionView::Base.send :include, CacheWithSettings::Helpers::CacheHelper
+        ActionView::Base.send :include, CacheWithSettings::Helpers::RenderingHelper
       end
     end
   end
