@@ -33,6 +33,14 @@ end
 
 That's it! Your template `cache` calls now automatically include the specified cache keys.
 
+Collection caching is also supported. If you're rendering collections with `cached: true` your specified cache keys will automatically be included:
+
+```erb
+<%= render partial: "cities/city",
+           collection: @cities,
+           cached: true %>
+```
+
 ## Installation
 Add this line to your application's Gemfile:
 
