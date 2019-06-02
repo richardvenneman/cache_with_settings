@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.version     = CacheWithSettings::VERSION
   s.authors     = ["Richard Venneman"]
   s.email       = ["richardvenneman@me.com"]
-  s.homepage    = "https://github.com/richardvenneman"
+  s.homepage    = "https://github.com/richardvenneman/cache_with_settings"
   s.summary     = "Configurable Rails fragment caching"
   s.description = "Configure any values such as the application locale to be part of Rails fragment caching cache keys."
   s.license     = "MIT"
