@@ -41,6 +41,15 @@ Collection caching is also supported. If you're rendering collections with `cach
            cached: true %>
 ```
 
+### HTTP Caching
+If you're using a HTTP cache in production (with Rails conditional get), add the dynamic cache keys with the [`etag` directive](https://api.rubyonrails.org/classes/ActionController/ConditionalGet/ClassMethods.html#method-i-etag):
+
+```ruby
+class ApplicationController
+  etag { [I18n.locale.to_s, MoneyRails.default_currency.to_s].join("-") }
+end
+```
+
 ## Installation
 Add this line to your application's Gemfile:
 
