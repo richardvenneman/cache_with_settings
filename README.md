@@ -46,7 +46,7 @@ If you're using a HTTP cache in production (with Rails conditional get), add the
 
 ```ruby
 class ApplicationController
-  etag { [I18n.locale.to_s, MoneyRails.default_currency.to_s].join("-") }
+  etag { CacheWithSettings.cache_keys.call.join("-") }
 end
 ```
 
