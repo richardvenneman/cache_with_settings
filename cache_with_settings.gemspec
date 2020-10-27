@@ -20,6 +20,6 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails"
 
-  s.add_development_dependency "rubocop-rails_config", "~> 0.6"
+  s.add_development_dependency "rubocop-rails_config", "~> 1.0"
   s.add_development_dependency "sqlite3"
 end
