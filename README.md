@@ -1,7 +1,7 @@
 # CacheWithSettings
 CacheWithSettings allows you to add any key to partial caching cache keys. This is useful if your website is multilingual or allows the user to choose a display currency.
 
-[![Build Status](https://travis-ci.org/richardvenneman/cache_with_settings.svg?branch=master)](https://travis-ci.org/richardvenneman/cache_with_settings)
+[![Build Status](https://github.com/richardvenneman/cache_with_settings/actions?query=workflow%3ARuby)](https://github.com/richardvenneman/cache_with_settings/workflows/Ruby/badge.svg)
 [![Gem Version](https://badge.fury.io/rb/cache_with_settings.svg)](https://badge.fury.io/rb/cache_with_settings)
 
 ## Problem & Solution
